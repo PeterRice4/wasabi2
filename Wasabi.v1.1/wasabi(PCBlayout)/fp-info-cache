@@ -1,4 +1,4 @@
-22348309829119135
+22355138118217645
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -92238,3 +92238,31 @@ varistor
 0
 2
 2
+Wasabi(Footprints)
+HEF4104BT,653(footprint)
+
+HEF4104BT_653 
+0
+16
+16
+Wasabi(Footprints)
+L298p(footprint)
+
+
+0
+23
+23
+Wasabi(Footprints)
+Switch1101M2S3CQE2(footprint)
+
+1101M2S3CQE2 
+0
+3
+3
+Wasabi(Footprints)
+TEENSY41(footprint)
+TEENSY 4.1-5
+Integrated Circuit
+0
+59
+59
