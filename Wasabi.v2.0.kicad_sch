@@ -781,6 +781,65 @@
         )
       )
     )
+    (symbol "Fuse(MFU0805FF05000P100):MFU0805FF05000P100" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "F" (at 5.08 3.175 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Value" "MFU0805FF05000P100" (at 5.08 -3.175 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Footprint" "FUS_VISHAY_MFU0805_VIS" (at 0 0 0)
+        (effects (font (size 1.27 1.27) italic) hide)
+      )
+      (property "Datasheet" "MFU0805FF05000P100" (at 0 0 0)
+        (effects (font (size 1.27 1.27) italic) hide)
+      )
+      (property "ki_locked" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "ki_keywords" "MFU0805FF05000P100" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "FUS_VISHAY_MFU0805_VIS" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MFU0805FF05000P100_1_1"
+        (arc (start 5.08 0) (mid 3.81 1.2645) (end 2.54 0)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (arc (start 5.08 0) (mid 6.35 -1.2645) (end 7.62 0)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (pin unspecified line (at 0 0 0) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin unspecified line (at 10.16 0 180) (length 2.54)
+          (name "2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "MFU0805FF05000P100_1_2"
+        (arc (start 0 5.08) (mid -1.2645 3.81) (end 0 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (arc (start 0 5.08) (mid 1.2645 6.35) (end 0 7.62)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (pin unspecified line (at 0 0 90) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin unspecified line (at 0 10.16 270) (length 2.54)
+          (name "2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "L298P:L298P" (in_bom yes) (on_board yes)
       (property "Reference" "IC" (at 36.83 7.62 0)
         (effects (font (size 1.27 1.27)) (justify left top))
@@ -1442,122 +1501,218 @@
         )
       )
     )
-    (symbol "Switch(500SSP1S2M2QEA):500SSP1S2M2QEA" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 12.7 7.62 0)
+    (symbol "Switch(1101M2S3CQE2):1101M2S3CQE2" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 22.86 17.78 0)
         (effects (font (size 1.524 1.524)))
       )
-      (property "Value" "500SSP1S2M2QEA" (at 12.7 5.08 0)
+      (property "Value" "1101M2S3CQE2" (at 22.86 22.86 0)
         (effects (font (size 1.524 1.524)))
       )
-      (property "Footprint" "500SSP1_EWI" (at 0 0 0)
+      (property "Footprint" "1101M2S3CQE2" (at 0 0 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "500SSP1S2M2QEA" (at 0 0 0)
+      (property "Datasheet" "1101M2S3CQE2" (at 0 0 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
       (property "ki_locked" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "ki_keywords" "500SSP1S2M2QEA" (at 0 0 0)
+      (property "ki_keywords" "1101M2S3CQE2" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "500SSP1_EWI" (at 0 0 0)
+      (property "ki_fp_filters" "1101M2S3CQE2" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "500SSP1S2M2QEA_0_1"
+      (symbol "1101M2S3CQE2_0_1"
         (polyline
           (pts
-            (xy 7.62 -5.08)
-            (xy 17.78 -5.08)
+            (xy 7.62 -12.7)
+            (xy 38.1 -12.7)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
         (polyline
           (pts
+            (xy 7.62 12.7)
+            (xy 7.62 -12.7)
+          )
+          (stroke (width 0.127) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 12.7 0)
             (xy 7.62 0)
-            (xy 11.43 0)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 7.62 2.54)
-            (xy 7.62 -5.08)
+            (xy 22.8235 -8.57)
+            (xy 22.8536 -6.4907)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 12.7 -2.032)
-            (xy 12.7 -2.54)
+            (xy 22.8235 8.57)
+            (xy 22.8536 6.4907)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 12.7 -1.524)
-            (xy 11.7475 0.635)
+            (xy 22.8687 -4.5184)
+            (xy 22.8687 -5.7884)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 17.78 -5.08)
-            (xy 17.78 2.54)
+            (xy 22.8687 -2.6134)
+            (xy 22.8687 -3.8834)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 17.78 -2.54)
-            (xy 12.7 -2.54)
+            (xy 22.8687 -0.7084)
+            (xy 22.8687 -1.9784)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 17.78 0)
-            (xy 13.97 0)
+            (xy 22.8687 0.7084)
+            (xy 22.8687 1.9784)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 17.78 2.54)
-            (xy 7.62 2.54)
+            (xy 22.8687 2.6134)
+            (xy 22.8687 3.8834)
           )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
-        (circle (center 11.684 0) (radius 0.254)
+        (polyline
+          (pts
+            (xy 22.8687 4.5184)
+            (xy 22.8687 5.7884)
+          )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
-        (circle (center 12.7 -1.778) (radius 0.254)
+        (polyline
+          (pts
+            (xy 33.02 -5.08)
+            (xy 33.02 -2.54)
+          )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
-        (circle (center 13.716 0) (radius 0.254)
+        (polyline
+          (pts
+            (xy 33.02 2.54)
+            (xy 33.02 5.08)
+          )
           (stroke (width 0.127) (type default))
           (fill (type none))
         )
-        (pin unspecified line (at 0 0 0) (length 7.62)
+        (polyline
+          (pts
+            (xy 33.02 5.08)
+            (xy 38.1 5.08)
+          )
+          (stroke (width 0.127) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 35.56 0)
+            (xy 7.62 0)
+          )
+          (stroke (width 0.127) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 38.1 -5.08)
+            (xy 33.02 -5.08)
+          )
+          (stroke (width 0.127) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 38.1 12.7)
+            (xy 7.62 12.7)
+          )
+          (stroke (width 0.127) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 38.1 12.7)
+            (xy 38.1 -12.7)
+          )
+          (stroke (width 0.127) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 22.2337 -7.757)
+            (xy 23.5037 -7.757)
+            (xy 22.8687 -9.027)
+          )
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy 22.2337 7.757)
+            (xy 23.5037 7.757)
+            (xy 22.8687 9.027)
+          )
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy 32.385 -3.81)
+            (xy 33.655 -3.81)
+            (xy 33.02 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy 32.385 3.81)
+            (xy 33.655 3.81)
+            (xy 33.02 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (pin unspecified line (at 45.72 5.08 180) (length 7.62)
           (name "1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin unspecified line (at 25.4 -2.54 180) (length 7.62)
+        (pin unspecified line (at 0 0 0) (length 7.62)
           (name "2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin unspecified line (at 25.4 0 180) (length 7.62)
+        (pin unspecified line (at 45.72 -5.08 180) (length 7.62)
           (name "3" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
@@ -2291,12 +2446,12 @@
   (no_connect (at 81.28 92.71) (uuid 156f1ff9-1850-4eca-a967-ab4307e0f447))
   (no_connect (at 25.4 90.17) (uuid 1a02299d-381c-4c6c-9890-8589223f6de4))
   (no_connect (at 81.28 85.09) (uuid 1beb9fa8-03a8-42f3-9947-19ba1895acd1))
+  (no_connect (at 207.01 186.69) (uuid 1e725a04-aaf0-4e08-bdac-27f8754d88b3))
   (no_connect (at 279.4 29.21) (uuid 26b14172-5adc-42e1-a345-3e606ffa5970))
   (no_connect (at 144.78 252.73) (uuid 26eada99-ac29-4016-b81b-df0cbfa47396))
   (no_connect (at 81.28 74.93) (uuid 348d23a4-7b31-44ea-a650-25531a7fbd0d))
   (no_connect (at 81.28 64.77) (uuid 34ad0d48-d3b9-475d-8db6-726088dfc012))
   (no_connect (at 195.58 247.65) (uuid 355e28e4-056b-4120-925e-ee57b26e573f))
-  (no_connect (at 190.5 185.42) (uuid 3800013d-efd0-4b58-b2b1-f235fcb25121))
   (no_connect (at 195.58 245.11) (uuid 397af6bc-2a42-42c8-8c2c-98984e44c208))
   (no_connect (at 144.78 240.03) (uuid 3cfc4193-77c9-4a47-989f-83c3ac3315d4))
   (no_connect (at 259.08 62.23) (uuid 3fa6be3a-8d98-4eeb-9f08-f906d59f3ed0))
@@ -2914,7 +3069,7 @@
     (uuid ff7efa6b-6a0a-43da-b32b-f18760ffeec8)
   )
 
-  (rectangle (start 136.525 165.735) (end 205.74 198.12)
+  (rectangle (start 136.525 165.735) (end 222.25 212.09)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 20f13e5c-f3b6-44dd-af4e-59c9084f450f)
@@ -3107,7 +3262,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dff77372-9d5b-4a16-b6f8-3f724f43eddf)
   )
-  (text "NEED FUSE" (at 290.83 189.23 0)
+  (text "Fuse" (at 248.92 176.53 0)
     (effects (font (size 4 4)) (justify left bottom))
     (uuid e0970e3e-b049-4f31-80ad-3c0fa6bdba35)
   )
@@ -3226,6 +3381,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "7.4V Battery(Pre Switch)" (shape input) (at 161.29 191.77 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 26e4b507-2db4-4c6e-9edd-59cd700f0ee5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 134.5981 191.77 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "Pin 6 (PWM for Speed 5v)" (shape input) (at 144.78 250.19 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 319aa9bc-935f-411b-a02c-d69162455319)
@@ -3296,13 +3458,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "7.4V Battery(Pre Switch)" (shape input) (at 165.1 185.42 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 4b53393a-bf95-47ef-b104-66cfa59f4884)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 138.4081 185.42 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "Signal IR 1 (3.3v)" (shape input) (at 148.59 25.4 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 4d056b7f-0908-4fd8-ae4a-4e618ef8c30f)
@@ -3321,6 +3476,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 611956b6-8cc2-45a5-ac17-557b775d7e26)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 107.1855 250.19 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "7.4V Battery(Pre Switch)" (shape input) (at 271.78 194.31 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 655c6cd5-5d4a-4a76-adad-68523b3f3f73)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 298.4719 194.31 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -3378,6 +3540,13 @@
     (uuid 80872f31-ad46-4ba9-b236-9ad1bf817ba1)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 17.2745 240.03 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "7.4V Battery" (shape input) (at 207.01 196.85 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 84efa6bc-d323-443b-a0bf-7e7ad8bac259)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 221.788 196.85 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "Pin 4 (3.3v sig MD)" (shape input) (at 87.63 245.11 0) (fields_autoplaced)
@@ -3464,13 +3633,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "7.4V Battery" (shape input) (at 190.5 187.96 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid bc4dcfd9-cd65-4578-b7f3-9a40ec8f9cf9)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 205.278 187.96 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "Pin 3 (5v to MD)" (shape input) (at 279.4 44.45 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid c3c82175-aec0-4496-bc1a-2d67bebbbfcb)
@@ -3478,10 +3640,17 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "7.4V Battery(Pre Switch)" (shape input) (at 121.92 191.77 180) (fields_autoplaced)
+  (global_label "7.4V Battery(Pre fuse)" (shape input) (at 261.62 194.31 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid c426e3b5-9687-49f4-b647-34ed1bd718dd)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.0448 194.31 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "7.4V Battery(Pre fuse)" (shape input) (at 121.92 191.77 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid c90bf2b7-83eb-482e-9e89-9850d387644d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.2281 191.77 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 97.3448 191.77 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -3574,7 +3743,7 @@
     (pin "1" (uuid 1bdcba7f-142c-4de2-a661-499427ad926c))
     (pin "2" (uuid 23d878ca-5288-4126-9095-7f76dc7831e5))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C9") (unit 1)
         )
@@ -3599,7 +3768,7 @@
     )
     (pin "1" (uuid b475490a-ed7d-4cff-a0f9-c445d72bcc96))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR05") (unit 1)
         )
@@ -3625,7 +3794,7 @@
     (pin "1" (uuid 840fbb65-89b5-48d2-b32d-e712ac994d71))
     (pin "2" (uuid 0fe2ab52-8b9c-4896-aefe-6edd8e895b91))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R10") (unit 1)
         )
@@ -3651,7 +3820,7 @@
     (pin "1" (uuid f87f1af1-1a8c-4498-a2f7-e1b79935ebc6))
     (pin "2" (uuid f73c98d6-fae7-4b40-b3c4-e46f0ad70ba8))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED6") (unit 1)
         )
@@ -3677,7 +3846,7 @@
     (pin "1" (uuid 08a4dbe3-828d-47e2-ad6b-8220570c4f90))
     (pin "2" (uuid 85a08014-4d57-4386-a6de-6316a51c4645))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C1") (unit 1)
         )
@@ -3703,7 +3872,7 @@
     (pin "1" (uuid 45c2ae26-a185-49ac-a361-010400caf965))
     (pin "2" (uuid 09798135-ae78-46d7-85b9-2c97d3008fc8))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R5") (unit 1)
         )
@@ -3728,7 +3897,7 @@
     )
     (pin "1" (uuid a245d867-9357-4d9a-8089-df0b8cca91a6))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR033") (unit 1)
         )
@@ -3753,7 +3922,7 @@
     )
     (pin "1" (uuid 53bb0a4b-cb68-4c8f-a6e3-1ecc92cae7b2))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR025") (unit 1)
         )
@@ -3785,7 +3954,7 @@
     (pin "1" (uuid 91ef15fe-86f9-4dc1-88b2-0c9ae694d519))
     (pin "2" (uuid aad2543d-510f-4c29-a21c-8060c42cc45c))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "D8") (unit 1)
         )
@@ -3817,7 +3986,7 @@
     (pin "1" (uuid 324ee94b-1437-41d2-b1ab-b894f82211a3))
     (pin "2" (uuid ba9faea3-9f28-4829-a7d4-d11624bfa3f0))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "D5") (unit 1)
         )
@@ -3843,7 +4012,7 @@
     (pin "1" (uuid d58fb4d1-dfde-478b-b5f6-1d7cd5f2217c))
     (pin "2" (uuid fb10c327-413e-4d7d-b00f-b7fc9c0ee3a3))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C6") (unit 1)
         )
@@ -3869,7 +4038,7 @@
     (pin "1" (uuid 4e66f51e-009b-490f-9a1a-f0ed5049458d))
     (pin "2" (uuid d8feafb9-4227-492e-b15a-e4263e963807))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R6") (unit 1)
         )
@@ -3894,7 +4063,7 @@
     )
     (pin "1" (uuid 5cabfe85-c1da-4edf-9926-83817bfca913))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR027") (unit 1)
         )
@@ -3919,7 +4088,7 @@
     )
     (pin "1" (uuid b2aa8fb3-4a28-41d1-a414-fc32ef63fad2))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR013") (unit 1)
         )
@@ -3944,7 +4113,7 @@
     )
     (pin "1" (uuid 6efc9e01-01f4-4ebc-a5c9-9c4729febbfe))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR040") (unit 1)
         )
@@ -4035,7 +4204,7 @@
     (pin "34" (uuid f0f9eb83-4fdb-4df5-8cd7-4b0ba29701de))
     (pin "4" (uuid 771fa398-47cb-4e49-ba19-872fe6b2f0c0))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "U1") (unit 1)
         )
@@ -4061,7 +4230,7 @@
     (pin "1" (uuid e9dfc012-7686-414f-990b-be4a8846d92d))
     (pin "2" (uuid 733fbde0-75cc-4f07-9632-a359ae0748b0))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R4") (unit 1)
         )
@@ -4093,7 +4262,7 @@
     (pin "1" (uuid d637c324-44fd-42b2-ae71-6f9e561d61e2))
     (pin "2" (uuid 0ce873e8-b4ce-432b-bbb7-26262ad75976))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "D2") (unit 1)
         )
@@ -4118,7 +4287,7 @@
     )
     (pin "1" (uuid 100bb8a4-7856-4940-ba5d-7d095470062f))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR036") (unit 1)
         )
@@ -4143,7 +4312,7 @@
     )
     (pin "1" (uuid b9566ba6-2c99-4345-be6d-bd86e406e387))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR032") (unit 1)
         )
@@ -4168,7 +4337,7 @@
     )
     (pin "1" (uuid 1bd57a61-00ea-462f-985e-6d0365adf69f))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR022") (unit 1)
         )
@@ -4194,7 +4363,7 @@
     (pin "1" (uuid 4fe826a1-ac5a-4008-b920-ee42e6a49744))
     (pin "2" (uuid b926b21a-ebaa-4837-a6c7-4213ba09f5fc))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R9") (unit 1)
         )
@@ -4219,7 +4388,7 @@
     )
     (pin "1" (uuid 51602e21-ac1e-48a6-92ed-058153750c53))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR017") (unit 1)
         )
@@ -4244,7 +4413,7 @@
     )
     (pin "1" (uuid e64127c1-b105-4237-af6e-5b9a965da22c))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR020") (unit 1)
         )
@@ -4275,7 +4444,7 @@
     (pin "6" (uuid 90b60ad9-2acb-41f8-9de3-e39c58e105b2))
     (pin "7" (uuid 61dbce3b-d575-49e7-aae2-267dff97471c))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "J4") (unit 1)
         )
@@ -4300,7 +4469,7 @@
     )
     (pin "1" (uuid c02e5152-2e48-4e73-8282-ac295be8f6a6))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR02") (unit 1)
         )
@@ -4325,7 +4494,7 @@
     )
     (pin "1" (uuid 258bbd2b-d6b3-43c0-8d04-39d880193cf3))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR011") (unit 1)
         )
@@ -4351,7 +4520,7 @@
     (pin "1" (uuid 1113f9db-7476-4ff0-b21e-4fab8fe0b68c))
     (pin "2" (uuid ee2b0f4b-3842-454e-b7fe-358e71b133c3))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C5") (unit 1)
         )
@@ -4411,7 +4580,7 @@
     (pin "8" (uuid 2a2d3278-a2be-481f-8d3d-556b9e249d88))
     (pin "9" (uuid 7032eac9-917c-4b8b-b06b-a6e348c9e4a1))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "IC1") (unit 1)
         )
@@ -4437,7 +4606,7 @@
     (pin "1" (uuid 70a1bbc1-2494-43ca-b071-5cea449c5c04))
     (pin "2" (uuid 3f8bce99-9f9f-47b0-b265-688b391b7fe2))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED5") (unit 1)
         )
@@ -4463,7 +4632,7 @@
     (pin "1" (uuid b293ab32-7ad4-4fb3-910c-4fdb94c1bc23))
     (pin "2" (uuid 79f53021-eafb-47f2-bcab-681be8978e8a))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R3") (unit 1)
         )
@@ -4488,7 +4657,7 @@
     )
     (pin "1" (uuid 64d5a7d7-b52b-4737-95b1-715732f9d36b))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR015") (unit 1)
         )
@@ -4514,7 +4683,7 @@
     (pin "1" (uuid d9c53036-f614-4e60-81c2-62890e1589c6))
     (pin "2" (uuid b0d083d0-8637-4cd6-afff-e70c16c6f8d5))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED7") (unit 1)
         )
@@ -4539,7 +4708,7 @@
     )
     (pin "1" (uuid e517ccd0-eaf4-4448-9aa7-1d9472aa7d9d))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR028") (unit 1)
         )
@@ -4565,7 +4734,7 @@
     (pin "1" (uuid 529d739e-a6d4-461b-a18e-373c062a9cbb))
     (pin "2" (uuid 4ec1c3a2-6616-4efb-adda-3b43016baf92))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED8") (unit 1)
         )
@@ -4592,7 +4761,7 @@
     (pin "2" (uuid 434b41b3-88c9-4d8e-afdb-e41cd6cc95fb))
     (pin "3" (uuid 708bf105-b01e-4330-90e0-5b3f6dead8ea))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "J5") (unit 1)
         )
@@ -4617,7 +4786,7 @@
     )
     (pin "1" (uuid 7eddeef8-ab2e-49b3-8bf5-e5f43e82edde))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR01") (unit 1)
         )
@@ -4643,7 +4812,7 @@
     (pin "1" (uuid 718a9351-b191-4ca4-b319-34966aa1cc8a))
     (pin "2" (uuid af0c66dd-151a-45ac-8c8a-8923136deceb))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C8") (unit 1)
         )
@@ -4669,7 +4838,7 @@
     (pin "1" (uuid e8c2c9c7-9e8a-474c-ba10-123127050230))
     (pin "2" (uuid 3c648262-b411-4e6e-ac56-094938bf7248))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R8") (unit 1)
         )
@@ -4695,7 +4864,7 @@
     (pin "1" (uuid 7f1cd29b-624a-460b-8e9c-f8e3e29ac3e9))
     (pin "2" (uuid 60e5c834-795e-48ba-9067-8bd08bc1c7ed))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED10") (unit 1)
         )
@@ -4720,7 +4889,7 @@
     )
     (pin "1" (uuid 52a56e3b-7dce-43ed-9b65-bfe47bba301a))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR038") (unit 1)
         )
@@ -4745,7 +4914,7 @@
     )
     (pin "1" (uuid 143ddb4e-fe40-46b5-ac65-349386328ee0))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR021") (unit 1)
         )
@@ -4772,7 +4941,7 @@
     (pin "3" (uuid 2ea12282-711b-4eff-94c3-ee6532fad199))
     (pin "2" (uuid e16f586f-ca32-4a48-8b51-dd09e0dce0db))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "U3") (unit 1)
         )
@@ -4797,7 +4966,7 @@
     )
     (pin "1" (uuid 0ba833ad-3621-44c5-aef6-688716e40884))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR031") (unit 1)
         )
@@ -4822,7 +4991,7 @@
     )
     (pin "1" (uuid 6bf69b19-f436-434b-bc81-aed85cdfcb10))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR018") (unit 1)
         )
@@ -4854,36 +5023,9 @@
     (pin "1" (uuid dd21ee40-114e-4b8c-abf0-19e9f9bffc93))
     (pin "2" (uuid 70ae23b7-d248-4894-9fa3-b907d832ce94))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "D3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch(500SSP1S2M2QEA):500SSP1S2M2QEA") (at 165.1 185.42 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8b06113e-2bfa-4080-a588-ed4faca8f2ff)
-    (property "Reference" "SW1" (at 177.8 177.8 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "500SSP1S2M2QEA" (at 177.8 180.34 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Footprint" "500SSP1_EWI" (at 165.1 185.42 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "500SSP1S2M2QEA" (at 165.1 185.42 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (pin "1" (uuid 628c6d62-5056-4a0f-a96e-6e964ba62e3a))
-    (pin "2" (uuid b9568917-4881-46a7-bd4e-5eeea18f3885))
-    (pin "3" (uuid b5413a33-7786-4f5b-b60b-89c5f63caca5))
-    (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
-        (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
-          (reference "SW1") (unit 1)
         )
       )
     )
@@ -4921,7 +5063,7 @@
     (pin "8" (uuid 9fb4092e-ead1-47b9-af10-e23c546259fc))
     (pin "9" (uuid cab44c76-794c-448c-8728-b177ceaf026e))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "U2") (unit 1)
         )
@@ -4949,7 +5091,7 @@
     (pin "3" (uuid 101ffd38-3f26-4256-b2ce-3f7dbff8b797))
     (pin "4" (uuid c22f1a61-4369-484a-be97-429a8ed301cc))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "J1") (unit 1)
         )
@@ -4989,7 +5131,7 @@
     (pin "8" (uuid d9f03ff2-e972-4bbb-94b1-2ece99273f62))
     (pin "9" (uuid 81c84d66-ec3f-4fa8-a5cc-4e6c1a8df6b7))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "U4") (unit 1)
         )
@@ -5014,7 +5156,7 @@
     )
     (pin "1" (uuid cc32f598-f9d7-40b4-9a72-65cf14107bac))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR030") (unit 1)
         )
@@ -5039,7 +5181,7 @@
     )
     (pin "1" (uuid 091f6a28-5054-46e0-ba3f-af419cf1c47b))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR035") (unit 1)
         )
@@ -5071,7 +5213,7 @@
     (pin "1" (uuid d2760ce2-7a45-4351-8caf-bfbf518eed7a))
     (pin "2" (uuid 8abae3fd-a001-4e1d-836a-9411ffcca1dc))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "D1") (unit 1)
         )
@@ -5096,7 +5238,7 @@
     )
     (pin "1" (uuid 39529527-9be9-4baa-9ac3-d38a3ca150e9))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR023") (unit 1)
         )
@@ -5128,7 +5270,7 @@
     (pin "1" (uuid 35c923a4-f0e4-4ed9-ad63-669f7254568b))
     (pin "2" (uuid 406a4e96-9999-4fa3-86c5-079fcbb34701))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "D4") (unit 1)
         )
@@ -5154,7 +5296,7 @@
     (pin "1" (uuid 6a2dbcf3-66a9-43e3-8463-99828c2217f9))
     (pin "2" (uuid a3bf7904-cea3-4a5c-b37a-96a0edac52d1))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C7") (unit 1)
         )
@@ -5180,7 +5322,7 @@
     (pin "1" (uuid 117db1b6-12ee-4a6e-941c-daf5e686810b))
     (pin "2" (uuid 5aa4f12b-73f1-4469-85a4-0d0e9059d63c))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED4") (unit 1)
         )
@@ -5205,7 +5347,7 @@
     )
     (pin "1" (uuid 6db4e867-b668-418f-b808-dec69cccb9b0))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR08") (unit 1)
         )
@@ -5230,7 +5372,7 @@
     )
     (pin "1" (uuid b9ec9069-04f4-473c-9dd8-788e7f196057))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR041") (unit 1)
         )
@@ -5255,7 +5397,7 @@
     )
     (pin "1" (uuid 663956c2-a87e-407c-8959-375e03b9ef81))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR012") (unit 1)
         )
@@ -5280,7 +5422,7 @@
     )
     (pin "1" (uuid 0248355a-8086-401d-b05a-e6d014f8c4d0))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR034") (unit 1)
         )
@@ -5345,7 +5487,7 @@
     (pin "N" (uuid b218ce72-cff2-4339-a96f-3ac2f8b5141d))
     (pin "P" (uuid 3bd91e4e-02d5-4355-83c9-158f3329cc73))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "J6") (unit 1)
         )
@@ -5371,7 +5513,7 @@
     (pin "1" (uuid cb8deae3-b590-41e1-afa9-067631757ad1))
     (pin "2" (uuid 9fc2dddc-8073-4422-909c-30299babeaf2))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R7") (unit 1)
         )
@@ -5403,7 +5545,7 @@
     (pin "7" (uuid 559f71e2-f16e-49a9-b697-a13a94d818b4))
     (pin "8" (uuid f807197d-a04a-4444-a1b4-c1ff0f4cc7b4))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "J3") (unit 1)
         )
@@ -5428,7 +5570,7 @@
     )
     (pin "1" (uuid b091428e-2bc0-44ee-884f-86ed8cff5432))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR09") (unit 1)
         )
@@ -5454,7 +5596,7 @@
     (pin "1" (uuid dee5d210-780e-483d-949a-72683128be06))
     (pin "2" (uuid b522bd3a-1469-48b5-a1aa-58e3315f7b0b))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED9") (unit 1)
         )
@@ -5480,7 +5622,7 @@
     (pin "1" (uuid c6c40b6a-ccfb-4057-af99-9ed6e6432596))
     (pin "2" (uuid 1f1f750e-2eb9-41e8-8944-091150a29cbc))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C4") (unit 1)
         )
@@ -5506,7 +5648,7 @@
     (pin "1" (uuid 1a0a0e51-b0fc-43aa-af21-e454b424fd9e))
     (pin "2" (uuid 01a9cdcf-cffd-4638-a628-eda9b7401cd3))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED3") (unit 1)
         )
@@ -5532,7 +5674,7 @@
     (pin "1" (uuid 4967f129-ce08-49c6-a8ed-4614ee072d67))
     (pin "2" (uuid f7f70074-c331-431c-b79a-690e3c65c872))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED1") (unit 1)
         )
@@ -5557,7 +5699,7 @@
     )
     (pin "1" (uuid bd83b4b3-4237-4ce2-a1b8-39e8dfc07172))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR016") (unit 1)
         )
@@ -5582,9 +5724,35 @@
     )
     (pin "1" (uuid 4c758397-f346-4f68-a87d-b00886301d98))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR019") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Fuse(MFU0805FF05000P100):MFU0805FF05000P100") (at 261.62 194.31 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid cdab59db-fd29-439e-92eb-2ca41c690541)
+    (property "Reference" "F1" (at 266.7 187.96 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "MFU0805FF05000P100" (at 266.7 190.5 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "FUS_VISHAY_MFU0805_VIS" (at 261.62 194.31 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "Datasheet" "MFU0805FF05000P100" (at 261.62 194.31 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (pin "1" (uuid 142a73f5-e8e5-46e2-9863-2c5e5683b8e2))
+    (pin "2" (uuid 6de13bae-5527-447a-bf63-55472b4d59b7))
+    (instances
+      (project "Wasabi.v2.0"
+        (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
+          (reference "F1") (unit 1)
         )
       )
     )
@@ -5607,7 +5775,7 @@
     )
     (pin "1" (uuid 6018071e-ccab-421c-b3f2-b2fb3a3d3390))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR039") (unit 1)
         )
@@ -5633,7 +5801,7 @@
     (pin "1" (uuid 1de59f40-a94e-4c34-9d81-1f9be1c846d7))
     (pin "2" (uuid 458a8cb6-add1-4c72-8a73-ca0f3036fa73))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C2") (unit 1)
         )
@@ -5658,7 +5826,7 @@
     )
     (pin "1" (uuid 1754cb45-e417-4a55-9dcb-b5b665e002fb))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR07") (unit 1)
         )
@@ -5683,7 +5851,7 @@
     )
     (pin "1" (uuid b222c892-7818-4aea-872a-370216573851))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR029") (unit 1)
         )
@@ -5708,7 +5876,7 @@
     )
     (pin "1" (uuid 77554df3-4eac-4ff2-8680-45ea2de2b636))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR026") (unit 1)
         )
@@ -5734,7 +5902,7 @@
     (pin "1" (uuid 862a76f4-4fe2-40a2-bad1-85b3492bc681))
     (pin "2" (uuid b0411e32-1815-4fd3-bf3e-4b2e054306d2))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R1") (unit 1)
         )
@@ -5766,7 +5934,7 @@
     (pin "1" (uuid f1cc9831-fcce-4145-827f-c40e9850d90a))
     (pin "2" (uuid a5639337-d75c-4c4a-8d6e-3e1be75b68f2))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "D7") (unit 1)
         )
@@ -5791,9 +5959,36 @@
     )
     (pin "1" (uuid 47f1fe41-4a35-47d2-ac9c-da25392917d0))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR06") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch(1101M2S3CQE2):1101M2S3CQE2") (at 161.29 191.77 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e2904161-3acf-46de-a3bd-9cc37ff7a519)
+    (property "Reference" "U5" (at 184.15 173.99 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "1101M2S3CQE2" (at 184.15 176.53 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "1101M2S3CQE2" (at 161.29 191.77 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "Datasheet" "1101M2S3CQE2" (at 161.29 191.77 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (pin "1" (uuid b68f49ef-038f-44f9-816c-e949bbcf332f))
+    (pin "2" (uuid 49e37941-cc1b-46bd-aab0-41dd598f4a34))
+    (pin "3" (uuid 84a7d7fa-4a3e-465e-a739-53d95d0e882a))
+    (instances
+      (project "Wasabi.v2.0"
+        (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -5816,7 +6011,7 @@
     )
     (pin "1" (uuid 9c5bf006-72dd-41e6-96fc-bc615e072fba))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR010") (unit 1)
         )
@@ -5841,7 +6036,7 @@
     )
     (pin "1" (uuid 0cf666b5-637c-4883-8a29-598558701241))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR024") (unit 1)
         )
@@ -5866,7 +6061,7 @@
     )
     (pin "1" (uuid 2bbab7a1-3663-4bb2-affe-eb233b1ce5c9))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR037") (unit 1)
         )
@@ -5891,7 +6086,7 @@
     )
     (pin "1" (uuid 0506ee0f-f62a-4f68-a1ef-0d9940c860e7))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR04") (unit 1)
         )
@@ -5916,7 +6111,7 @@
     )
     (pin "1" (uuid 3e6bb081-4a62-4863-98c4-bddbe8be2443))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR03") (unit 1)
         )
@@ -5942,7 +6137,7 @@
     (pin "1" (uuid 86ac1ef2-ce10-469a-a2da-c274cd169e57))
     (pin "2" (uuid f1dfdbe1-3097-4969-a6ef-f3b4c51dd2db))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "LED2") (unit 1)
         )
@@ -5967,7 +6162,7 @@
     )
     (pin "1" (uuid caa5c8d9-f1a8-493d-85c9-b09dbec538fd))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "#PWR014") (unit 1)
         )
@@ -5999,7 +6194,7 @@
     (pin "1" (uuid c5f6f6bf-35d8-4b80-a02e-e18dd3a13149))
     (pin "2" (uuid 7d1d30a3-ea29-4ded-86a6-b4c450cf8dbd))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "D6") (unit 1)
         )
@@ -6025,7 +6220,7 @@
     (pin "1" (uuid 36079559-12e9-49ec-8ec2-14bb41b0430b))
     (pin "2" (uuid f674fa58-f95e-4db6-a663-a872f72531bc))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C3") (unit 1)
         )
@@ -6051,7 +6246,7 @@
     (pin "1" (uuid 0e0738f0-7951-4edb-8a09-25343923edd7))
     (pin "2" (uuid f8e8f3a5-129b-4c30-97eb-44bdd561924e))
     (instances
-      (project "Wasabi.v1.1(organized ver)2.0"
+      (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "R2") (unit 1)
         )
