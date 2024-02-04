@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "teensy_library-master")(type "KiCad")(uri "/Users/peterrice/Desktop/teensy_library-master.pretty")(options "")(descr ""))
+)
