@@ -2503,7 +2503,6 @@
   (no_connect (at 102.87 78.74) (uuid 83e1d60f-c9d8-40b4-8bfc-39efd72fc77f))
   (no_connect (at 217.17 266.7) (uuid 841a4611-6e3a-4d06-b630-b996db2a6d38))
   (no_connect (at 260.35 43.18) (uuid 890b8d40-3e16-476d-a65e-0a75f83cb6d5))
-  (no_connect (at 280.67 76.2) (uuid 921a65bc-da13-4ef1-9d54-2add160675d3))
   (no_connect (at 46.99 120.65) (uuid 98f5b6e3-d18e-4a89-a77e-567c2bc69e22))
   (no_connect (at 109.22 266.7) (uuid 99497dc4-3230-4af3-821a-28c1bee29554))
   (no_connect (at 58.42 251.46) (uuid a92a0bc1-31f2-462c-9b60-9d3286e176d7))
@@ -3881,6 +3880,31 @@
       (project "Wasabi.v2.0"
         (path "/5d45a1fb-2615-40b7-8ce4-fce8584763df"
           (reference "C7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 280.67 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0b002b09-bb8c-41cc-a2a7-58d1aad8b347)
+    (property "Reference" "#PWR046" (at 280.67 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 280.67 81.28 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 280.67 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 280.67 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 21c98b5b-1599-4c21-aca1-8b83bcb3cb5c))
+    (instances
+      (project "wasabi(PCBlayout)"
+        (path "/2233659d-bbf8-40ca-afc8-264af30c67f0"
+          (reference "#PWR046") (unit 1)
         )
       )
     )
