@@ -31,98 +31,68 @@ void setup() {
 }
 
 void loop() {
-  
-  
-  if(digitalRead(startModule) == 1)
-  {
 
-    if(analogRead(leftLine) > 200)
-  {
-    timer(.8, 'B');
-    timer(.3, 'R');
-    
-  }
-    else if(analogRead(rightLine) > 200)
-  {
-    timer(.8, 'B');
-    timer(.3, 'L');
-    
-  }
-  else 
-  {
 
-     if(digitalRead(middleIR) == 1)
-    {
-      forward();
-      delay(50);
-    }
-    else if(digitalRead(middleRightIR) == 1)
-    {
-      veerR();
-      delay(50);
-    }
-     else if(digitalRead(middleLeftIR) == 1)
-    {
-      veerL();
-      delay(50);
-    }
-    else if(digitalRead(leftIR) == 1)
-    {
-      //timer(1, 'L');
-      while(digitalRead(middleLeftIR) == 0)
-      {
-        turnL();
+  if (digitalRead(startModule) == 1) {
+
+    if (analogRead(leftLine) > 300) {
+      timer(.8, 'B');
+      timer(.3, 'R');
+
+    } else if (analogRead(rightLine) > 300) {
+      timer(.8, 'B');
+      timer(.3, 'L');
+
+    } else {
+
+      if (digitalRead(middleIR) == 1) {
+        forward();
+        delay(100);
+      } else if (digitalRead(middleRightIR) == 1) {
+        veerR();
+        delay(50);
+      } else if (digitalRead(middleLeftIR) == 1) {
+        veerL();
+        delay(50);
+      } else if (digitalRead(leftIR) == 1) {
+        //timer(1, 'L');
+        while (digitalRead(middleLeftIR) == 0) {
+          turnL();
+          
+        }
+
+
+        
+      } else if (digitalRead(rightIR) == 1) {
+        // timer(1, 'R');
+
+        while (digitalRead(middleRightIR) == 0) {
+          turnR();
+        }
+
+        
+      } else {
+        search();
       }
-
-
-      delay(100);
     }
-    else if(digitalRead(rightIR) == 1)
-    {
-     // timer(1, 'R');
-
-     while(digitalRead(middleRightIR) == 0)
-      {
-        turnR();
-      }
-
-      delay(100);
-    }
-    else 
-    {
-      search();
-    }
-  }
-
-
-
-
-  
-
-
-
-
-
 
 
   }
 
-else if(startModule == 0)
-  {
+  else if (startModule == 0) {
     digitalWrite(leftEnable, 1);
     digitalWrite(rightEnable, 1);
 
-   digitalWrite(leftMotorP, LOW);
-  digitalWrite(leftMotorN, LOW);
-  digitalWrite(rightMotorP, LOW);
-  digitalWrite(rightMotorN, LOW);
+    digitalWrite(leftMotorP, LOW);
+    digitalWrite(leftMotorN, LOW);
+    digitalWrite(rightMotorP, LOW);
+    digitalWrite(rightMotorN, LOW);
   }
-
 }
 
 void back() {
-analogWrite(leftEnable, 80);
- analogWrite(rightEnable, 80);
+  analogWrite(leftEnable, 80);
+  analogWrite(rightEnable, 80);
 
   digitalWrite(leftMotorP, HIGH);
   digitalWrite(leftMotorN, LOW);
@@ -132,19 +102,18 @@ analogWrite(leftEnable, 80);
 
 void forward() {
 
-analogWrite(leftEnable, 100);
-  analogWrite(rightEnable, 100);
+  digitalWrite(leftEnable, HIGH);
+  digitalWrite(rightEnable, HIGH);
 
- digitalWrite(leftMotorP, LOW);
+  digitalWrite(leftMotorP, LOW);
   digitalWrite(leftMotorN, HIGH);
   digitalWrite(rightMotorP, HIGH);
   digitalWrite(rightMotorN, LOW);
-
 }
 
 void stop() {
-analogWrite(leftEnable, 0);
- analogWrite(rightEnable, 0);
+  analogWrite(leftEnable, 0);
+  analogWrite(rightEnable, 0);
 
   digitalWrite(leftMotorP, LOW);
   digitalWrite(leftMotorN, LOW);
@@ -154,7 +123,7 @@ analogWrite(leftEnable, 0);
 
 void turnL() {
   analogWrite(leftEnable, 60);
- analogWrite(rightEnable, 60);
+  analogWrite(rightEnable, 60);
 
   digitalWrite(leftMotorP, LOW);
   digitalWrite(leftMotorN, HIGH);
@@ -166,7 +135,7 @@ void turnL() {
 
 void veerL() {
   analogWrite(leftEnable, 100);
- analogWrite(rightEnable, 80);
+  analogWrite(rightEnable, 80);
 
   digitalWrite(leftMotorP, LOW);
   digitalWrite(leftMotorN, HIGH);
@@ -176,7 +145,7 @@ void veerL() {
 
 void veerR() {
   analogWrite(leftEnable, 60);
- analogWrite(rightEnable, 120);
+  analogWrite(rightEnable, 120);
 
   digitalWrite(leftMotorP, LOW);
   digitalWrite(leftMotorN, HIGH);
@@ -187,8 +156,8 @@ void veerR() {
 
 
 void turnR() {
-analogWrite(leftEnable, 60);
- analogWrite(rightEnable, 60);
+  analogWrite(leftEnable, 60);
+  analogWrite(rightEnable, 60);
 
   digitalWrite(leftMotorP, HIGH);
   digitalWrite(leftMotorN, LOW);
@@ -196,7 +165,7 @@ analogWrite(leftEnable, 60);
   digitalWrite(rightMotorN, LOW);
 }
 boolean seeLine() {
-  if (analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
+  if (analogRead(leftLine) > 300 || analogRead(rightLine) > 230) {
     return true;
   }
   return false;
@@ -223,54 +192,44 @@ void timer(double seconds, char direction) {
   }
 }
 
-void search()
-{
-   
+void search() {
+
 
   while (digitalRead(middleIR) == 0) {
 
 
-    for(int i=1; i<5; i++)
-    {
-    turnL();
-    delay(150);
-    if((digitalRead(middleIR) == 1)||(digitalRead(middleLeftIR) == 1)||(digitalRead(middleRightIR) == 1)||(digitalRead(leftIR) == 1)||(digitalRead(rightIR) == 1)||analogRead(leftLine) > 200 || analogRead(rightLine) > 200)
-    {
-      break;
-    }
-    veerL();
-    delay(200);
-    if((digitalRead(middleIR) == 1)||(digitalRead(middleLeftIR) == 1)||(digitalRead(middleRightIR) == 1)||(digitalRead(leftIR) == 1)||(digitalRead(rightIR) == 1)||analogRead(leftLine) > 200 || analogRead(rightLine) > 200)
-    {
-      break;
-    }
-    turnR();
-    delay(150);
-    if((digitalRead(middleIR) == 1)||(digitalRead(middleLeftIR) == 1)||(digitalRead(middleRightIR) == 1)||(digitalRead(leftIR) == 1)||(digitalRead(rightIR) == 1)||analogRead(leftLine) > 200 || analogRead(rightLine) > 200)
-    {
-      break;
-    }
-    veerR();
-    delay(200);
-   if((digitalRead(middleIR) == 1)||(digitalRead(middleLeftIR) == 1)||(digitalRead(middleRightIR) == 1)||(digitalRead(leftIR) == 1)||(digitalRead(rightIR) == 1)||analogRead(leftLine) > 200 || analogRead(rightLine) > 200)
-    {
-      break;
-    }
+    for (int i = 1; i < 5; i++) {
+      turnL();
+      delay(150);
+      if ((digitalRead(middleIR) == 1) || (digitalRead(middleLeftIR) == 1) || (digitalRead(middleRightIR) == 1) || (digitalRead(leftIR) == 1) || (digitalRead(rightIR) == 1) || analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
+        break;
+      }
+      veerL();
+      delay(200);
+      if ((digitalRead(middleIR) == 1) || (digitalRead(middleLeftIR) == 1) || (digitalRead(middleRightIR) == 1) || (digitalRead(leftIR) == 1) || (digitalRead(rightIR) == 1) || analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
+        break;
+      }
+      turnR();
+      delay(150);
+      if ((digitalRead(middleIR) == 1) || (digitalRead(middleLeftIR) == 1) || (digitalRead(middleRightIR) == 1) || (digitalRead(leftIR) == 1) || (digitalRead(rightIR) == 1) || analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
+        break;
+      }
+      veerR();
+      delay(200);
+      if ((digitalRead(middleIR) == 1) || (digitalRead(middleLeftIR) == 1) || (digitalRead(middleRightIR) == 1) || (digitalRead(leftIR) == 1) || (digitalRead(rightIR) == 1) || analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
+        break;
+      }
     }
     turnR();
-    for(int j=1; j<5; j++){
-    
-    if((digitalRead(middleIR) == 1)||(digitalRead(middleLeftIR) == 1)||(digitalRead(middleRightIR) == 1)||(digitalRead(leftIR) == 1)||(digitalRead(rightIR) == 1)||analogRead(leftLine) > 200 || analogRead(rightLine) > 200)
-    {
-      break;
-    }
-    delay(100);
-    }
+    for (int j = 1; j < 5; j++) {
 
+      if ((digitalRead(middleIR) == 1) || (digitalRead(middleLeftIR) == 1) || (digitalRead(middleRightIR) == 1) || (digitalRead(leftIR) == 1) || (digitalRead(rightIR) == 1) || analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
+        break;
+      }
+      delay(100);
+    }
   }
-  if((digitalRead(middleIR) == 1)||(digitalRead(middleLeftIR) == 1)||(digitalRead(middleRightIR) == 1)||(digitalRead(leftIR) == 1)||(digitalRead(rightIR) == 1)||analogRead(leftLine) > 200 || analogRead(rightLine) > 200)
-    {
-    stop();
-    
-  }
+  //if ((digitalRead(middleIR) == 1) || (digitalRead(middleLeftIR) == 1) || (digitalRead(middleRightIR) == 1) || (digitalRead(leftIR) == 1) || (digitalRead(rightIR) == 1) || analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
+  //  break;
+ // }
 }
