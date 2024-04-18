@@ -196,7 +196,8 @@ void search() {
 
 
   while (digitalRead(middleIR) == 0) {
-
+  if ((digitalRead(middleIR) == 1) || (digitalRead(middleLeftIR) == 1) || (digitalRead(middleRightIR) == 1) || (digitalRead(leftIR) == 1) || (digitalRead(rightIR) == 1) || analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
+        break;}
 
     for (int i = 1; i < 5; i++) {
       turnL();
@@ -232,4 +233,4 @@ void search() {
   //if ((digitalRead(middleIR) == 1) || (digitalRead(middleLeftIR) == 1) || (digitalRead(middleRightIR) == 1) || (digitalRead(leftIR) == 1) || (digitalRead(rightIR) == 1) || analogRead(leftLine) > 200 || analogRead(rightLine) > 200) {
   //  break;
  // }
-}
+  }
